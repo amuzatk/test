@@ -1,0 +1,44 @@
+{
+  "presets": [
+    "next/babel",
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": true }]
+  ]
+}
+
+
+
+
+
+
+
+
+// {
+//   "plugins": [
+//     [
+//       "import",
+//       {
+//         "libraryName": "antd",
+//         "style": true
+//       }
+//     ]
+//   ]
+// }
+
+
+
+
+
+
+
+
+
+// {
+//   "presets": ["next/babel"],
+//   "plugins": [
+//     ["import", { "libraryName": "antd", "style": true }]
+//   ]
+// }

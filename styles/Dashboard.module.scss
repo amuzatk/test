@@ -24,9 +24,15 @@ border: 2px solid rgb(4, 255, 0);
 
 .sidebar{
 border: 2px solid blue;
+// width: clamp(300px, 4.6vw, 367px);
+
     // .webDash{
     //     margin-top: 80px;
     // }
+
+      @media only screen and (max-width:1000px){
+    display: none;
+}
 }
 
 .content{
