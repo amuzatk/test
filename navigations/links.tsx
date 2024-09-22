@@ -6,6 +6,19 @@ import {
   TransactionIcon,
   HomeIcon,
 } from '../constants/svgs';
+import { StaticImageData } from 'next/image';
+import Emily from '../public/assets/images/icons/Emily.png';
+import Ryan from '../public/assets/images/icons/Ryan.png';
+import Brandon from '../public/assets/images/icons/Brandon.png';
+import Jessica from '../public/assets/images/icons/Jessica.png';
+import Samantha from '../public/assets/images/icons/Samantha.png';
+import Ashley from '../public/assets/images/icons/Ashley.png';
+import Olivia from '../public/assets/images/icons/Olivia.png';
+import Tyler from '../public/assets/images/icons/Tyler.png';
+import Kevin from '../public/assets/images/icons/Kevin.png';
+import Dylan from '../public/assets/images/icons/Dylan.png';
+import Nathan from '../public/assets/images/icons/Nathan.png';
+import Mike from '../public/assets/images/icons/Mike.png';
 
 interface NavLink {
   TITLE: string;
@@ -47,38 +60,30 @@ export const NAV_LINKS: NavLink[] = [
   }
 ];
 
-export const SIDEBAR_LINKS: NavLink[] = [
-  {
-    TITLE: 'Overview',
-    LINK: '/overview',
-    SLUG: 'overview',
-    ICON: (isActive: boolean) => <HomeIcon isActive={isActive} />,
-  },
-  {
-    TITLE: 'Patients',
-    LINK: '/patients',
-    SLUG: 'patients',
-    ICON: (isActive: boolean) => <GroupIcon isActive={isActive} />,
-  },
-  {
-    TITLE: 'Schedule',
-    LINK: '/schedule',
-    SLUG: 'schedule',
-    ICON: (isActive: boolean) => <CalendarIcon isActive={isActive} />,
-  },
-  {
-    TITLE: 'Message',
-    LINK: '/message',
-    SLUG: 'message',
-    ICON: (isActive: boolean) => <ChartIcon isActive={isActive} />,
-  },
-  {
-    TITLE: 'Transaction',
-    LINK: '/transaction',
-    SLUG: 'transaction',
-    ICON: (isActive: boolean) => <TransactionIcon isActive={isActive} />,
-  }
+export type SidebarLink = {
+  name: string;
+  gender: string;
+  age: number;
+  avatar: StaticImageData;
+};
+
+export const SIDEBAR_LINKS: SidebarLink[] = [
+  { name: 'Emily Williams', gender: 'Female', age: 18, avatar: Emily },
+  { name: 'Ryan Johson', gender: 'Male', age: 45, avatar: Ryan },
+  { name: 'Brandon Mitchel', gender: 'Male', age: 36, avatar: Brandon },
+  { name: 'Jessica Taylor', gender: 'Female', age: 28, avatar: Jessica },
+  { name: 'Samantha Johnson', gender: 'Female', age: 56, avatar: Samantha },
+  { name: 'Ashley Martinez', gender: 'Female', age: 54, avatar: Ashley },
+  { name: 'Olivia Brown', gender: 'Female', age: 32, avatar: Olivia },
+  { name: 'Tyler Davis', gender: 'Male', age: 19, avatar: Tyler },
+  { name: 'Kevin Anderson', gender: 'Male', age: 30, avatar: Kevin },
+  { name: 'Dylan Thompson', gender: 'Male', age: 36, avatar: Dylan },
+  { name: 'Nathan Evans', gender: 'Male', age: 58, avatar: Nathan },
+  { name: 'Mike Norlan', gender: 'Male', age: 31, avatar: Mike },
+
 ];
+
+
 
 
 
