@@ -12,12 +12,12 @@ type Props = {
 
 const Dashboard = ({ children }: Props) => {
   const [activePatient, setActivePatient] = useState<SidebarLink>(SIDEBAR_LINKS[3]); // Default to Jessica Taylor
-  const [patientData, setPatientData] = useState<Patient | null>(null); // State to hold patient data
-  const [loading, setLoading] = useState<boolean>(false); // State for loading
+  const [patientData, setPatientData] = useState<Patient | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchPatientData = async () => {
-      setLoading(true); // Start loading
+      setLoading(true);
       try {
         const credentials = btoa('coalition:skills-test'); // Base64 encode username and password
         const response = await axios.get<Patient[]>(
@@ -41,7 +41,7 @@ const Dashboard = ({ children }: Props) => {
       } catch (error) {
         console.error('Error fetching patient data:', error);
       } finally {
-        setLoading(false); // Stop loading regardless of success or error
+        setLoading(false);
       }
     };
 
@@ -76,7 +76,19 @@ export default Dashboard;
 
 
 
-
+// {patientData ? (
+//                 <div>
+//                   <h2>{patientData.name}</h2>
+//                   <img src={patientData.profile_picture} alt={patientData.name} />
+//                   <p>Age: {patientData.age}</p>
+//                   <p>Gender: {patientData.gender}</p>
+//                   <p>Phone: {patientData.phone_number}</p>
+//                   <p>Emergency Contact: {patientData.emergency_contact}</p>
+//                   <p>Insurance: {patientData.insurance_type}</p>
+//                 </div>
+//               ) : (
+//                 <p>Loading patient data...</p>
+//               )}
 
 
 

@@ -12,6 +12,9 @@ module.exports = {
     });
     return config;
   },
+  images: {
+    domains: ['fedskillstest.ct.digital'],
+  },
 };
 
 

@@ -12,6 +12,12 @@
   opacity: 1;
   padding: 0 32px;
   // border: 1px solid red;
+  position: sticky;
+    // right: 0;
+    // left: 32;
+  top: 0;
+    // bottom: 32;
+    // z-index: 1000;
 
 //   @media only screen and (max-width:1279px){
 //   // border: 1px solid red;

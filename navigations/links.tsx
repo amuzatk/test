@@ -67,6 +67,12 @@ export type SidebarLink = {
   avatar: StaticImageData;
 };
 
+export type InfoInterface = {
+  text: string;
+  text2: string;
+  avatar: StaticImageData;
+};
+
 export const SIDEBAR_LINKS: SidebarLink[] = [
   { name: 'Emily Williams', gender: 'Female', age: 18, avatar: Emily },
   { name: 'Ryan Johson', gender: 'Male', age: 45, avatar: Ryan },
@@ -83,9 +89,13 @@ export const SIDEBAR_LINKS: SidebarLink[] = [
 
 ];
 
-
-
-
+export const INFO: InfoInterface[] = [
+  { text: 'Emily Williams', text2: 'Female', avatar: Emily },
+  { text: 'Ryan Johson', text2: 'Male', avatar: Ryan },
+  { text: 'Brandon Mitchel', text2: 'Male', avatar: Brandon },
+  { text: 'Jessica Taylor', text2: 'Female', avatar: Jessica },
+  { text: 'Samantha Johnson', text2: 'Female', avatar: Samantha },
+];
 
 // export const DASHBOARD_LINKS = [
 //   {

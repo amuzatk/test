@@ -18,6 +18,7 @@ const Sidebar = ({ activePatient, setActivePatient }: SidebarProps) => {
         <Image src={Search} width={18} height={18} alt="Search Icon" />
       </div>
 
+{/* <div className={styles.scroll}> */}
       {SIDEBAR_LINKS.map((link, index) => (
         <div
           key={index}
@@ -40,6 +41,7 @@ const Sidebar = ({ activePatient, setActivePatient }: SidebarProps) => {
         </div>
       ))}
     </div>
+    // </div>
   );
 };
 

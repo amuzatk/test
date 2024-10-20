@@ -5,6 +5,8 @@ border-radius: 16px;
 background-color: #FFFFFF;
 // height: 100%;
 // padding: clamp(14px, 4.6vw, 20px);
+// overflow-y:auto;
+// position: static;
 
 
 .heading{
@@ -23,6 +25,11 @@ font-size: clamp(20px, 4.6vw, 24px);
   }
 }
 
+// .scroll{
+//   border: 1px solid red;
+//   overflow-y: scroll;
+// }
+
 .sideLinks{
   // margin-top: 40px;
   display: flex;
@@ -31,6 +38,8 @@ font-size: clamp(20px, 4.6vw, 24px);
   align-items: center;
   height: clamp(50px, 4.6vw, 80px);
 padding: clamp(14px, 4.6vw, 20px);
+  // overflow-y: scroll;
+
 
   .left{
   display: flex;
